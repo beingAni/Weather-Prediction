@@ -1,0 +1,62 @@
+﻿  PREDICTINTG 'PLAY' ATTRIBUTE IN A WEATHER DATASET    22.11.2014
+  ===============================================================
+
+  Table of Contents
+  1. Introduction
+  2. Requirements 
+  3. How to compile and run ? 
+  4. How to use ?
+  5. Contact
+ 
+  #1 Introduction
+  This project labels the 'play' attribute in a dataset . The other attributes are  'HighTemp','LowTemp','MeanTemp','HighHumd','LowHumd','MeanHumd','CloudCover'and 'WindSpeed'.The idea is that when it rains , it is not preferred to go outside and play.So , the weather data that we have can be used to build a classification model that can be used to predict whether on a given day(whose weather conditions are given) it is favourable to go outside play or not. 
+
+
+
+  #2 Requirements
+   1.You must have JDK 1.7.x or above installed on your system and 
+   it should be added to your PATH variable.
+   2.You should have downloaded the weka library.It can be 
+   downloaded form  http://www.cs.waikato.ac.nz/ml/weka/downloading.html
+
+
+
+  #3 How to compile and run ??
+   WAY 1.From NetBeans or Eclipse or anyother IDE
+         Just import the project files and the weka libraries and
+         run.
+  
+   WAY 2. From Command Line 
+       From hereon 'pathlib' refers to the path to the weka libraries
+       that you downloaded and 'curdir' refers to the current directory.
+       
+        ~$  javac -classpath "pathlib" PredictPlay.java
+        ~$  java  -classpath "pathlib:curdir" PredictPlay
+
+ 
+
+ #4 How to use ??
+     We have already collected the traning data. 
+     When you run the program , it'll ask you three options.
+     
+     Choose [1] if you want to manually enter the details of a 
+     day for which you like to predict 'play'.
+     Choose [2] if you want to give a testingdata in proper ARFF
+     format , for which you would like to predict 'play'
+     Choose [3] if you want to use our sample testingdata to
+     predict 'play'.
+
+     You can view the training data in 'weather.arff' and 
+     the sample testing data in 'predictweather.arff'.
+
+  
+  #5 Contact
+     You can contact us at :
+     Giri Gaurav Bhatnagar <girigauravbhatnagar100@gmail.com>
+     Kishan Kishore Prasad <kishan2695@gmail.com>
+     Aniruddha Hore <being.anni@gmail.com>
+   
+      
+        
+     
+
